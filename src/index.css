@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  /* Midnight Blue Theme */
+  --bg-primary: #0f1419;
+  --bg-secondary: #1a1f26;
+  --accent-primary: #4a90e2;
+  --accent-secondary: #7bb3ff;
+  --text-primary: #e0e6ed;
+  --text-muted: #a0aec0;
+  --shadow-color: rgba(74, 144, 226, 0.2);
+}
+
+@theme {
+  /* Mapping ke Utilities Tailwind */
+  --color-primary: var(--bg-primary);
+  --color-secondary: var(--bg-secondary);
+
+  --color-accent: var(--accent-primary);
+  --color-accent-light: var(--accent-secondary);
+
+  --color-main: var(--text-primary);
+  --color-muted: var(--text-muted);
+
+  /* Custom Shadow menggunakan variabel shadow kamu */
+  --shadow-glow: 0 4px 15px var(--shadow-color);
+}
+
+
+@layer base {
+  /* Apply to body or components */
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    @apply antialiased;
+  }
+}
