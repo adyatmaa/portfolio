@@ -3,11 +3,11 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-export default function Header() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const isProjectPage = location.pathname.startsWith("/project/");
+  const isProjectPage = location.pathname.startsWith("/projects/");
 
   const navLink = [
     { label: "Home", href: "#home" },
@@ -57,7 +57,7 @@ export default function Header() {
               <li key={link.href}>
                 <Link
                   to={`/${link.href}`}
-                  className="text-sm transition-colors "
+                  className="text-sm font-mono text-gray-400 hover:text-teal-500 transition-colors duration-300"
                 >
                   {link.label}
                 </Link>
@@ -70,7 +70,7 @@ export default function Header() {
                     e.preventDefault();
                     handleNavClick(link.href);
                   }}
-                  className="text-sm transition-colors "
+                  className="text-sm font-mono text-gray-400 hover:text-teal-500 transition-colors duration-300"
                 >
                   {link.label}
                 </a>

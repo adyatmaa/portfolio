@@ -124,25 +124,13 @@ export default function SkillSection() {
 
   return (
     <section id="skills" className="py-24 md:py-32">
-      <div className="isolate bg-slate-900 px-6 py-24 sm:py-32 lg:px-8 relative">
+      <div className="container mx-auto px-6 py-24 sm:py-32 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          >
-            <div
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-              className="relative left-[calc(50%+3rem)] -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#80fff0] to-[#2619da] opacity-20 sm:left-[calc(50%)] sm:w-288.75"
-            />
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-300 mb-2">
             <span className="text-teal-600 text-lg font-mono mr-2">02.</span>
             Tech Stack

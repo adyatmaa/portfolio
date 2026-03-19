@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, ChevronDown } from "lucide-react";
+import { ArrowDown, ChevronDown, Send } from "lucide-react";
 export default function HeroSection() {
   return (
     <section
@@ -18,7 +18,6 @@ export default function HeroSection() {
             clipPath:
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
-          /* Perubahan utama ada pada class positioning di bawah ini */
           className="relative left-[calc(50%+3rem)] -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-288.75"
         />
       </div>
@@ -29,7 +28,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-main mb-4 tracking-wider"
+            className="text-teal-500 font-mono text-sm mb-4 tracking-wider"
           >
             Howdy, my name is
           </motion.p>
@@ -49,7 +48,7 @@ export default function HeroSection() {
             transition={{ delay: 0.4 }}
             className="text-muted mb-6 text-3xl sm:text-4xl md:text-6xl font-bold leading-tight"
           >
-            I do something.
+            I do code.
           </motion.h2>
 
           <motion.p
@@ -58,10 +57,9 @@ export default function HeroSection() {
             transition={{ delay: 0.5 }}
             className="text-gray-400 mb-10 text-lg md:text-xl max-w-xl leading-relaxed"
           >
-            Junior developer who Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Tenetur voluptatibus earum enim repellat, error
-            quod nostrum repellendus consequatur ab, esse ratione nobis amet.
-            Rerum quos tenetur repellat quo ipsa voluptate.
+            Junior Full-Stack Developer who passionate about building efficient,
+            modern web applications. Always eager to learn new technologies and
+            contribute to collaborative team projects.
           </motion.p>
 
           <motion.div
@@ -71,7 +69,7 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
             <button
-              className="bg-teal-700 px-8 py-3 rounded-xl text-main hover:bg-teal-600 duration-300"
+              className="bg-teal-500 px-8 py-3 rounded-xl inline-flex items-center gap-4 text-gray-900 font-mono cursor-pointer hover:scale-105 duration-300"
               onClick={() =>
                 document
                   .querySelector("#projects")
@@ -79,9 +77,10 @@ export default function HeroSection() {
               }
             >
               View Projects
+              <ArrowDown size={18} />
             </button>
             <button
-              className="bg-teal-700 px-8 py-3 rounded-xl text-main hover:bg-primary/90 glow shadow"
+              className="border border-teal-500 px-8 py-3 rounded-xl inline-flex items-center gap-4 text-teal-500 cursor-pointer hover:scale-105 duration-300"
               onClick={() =>
                 document
                   .querySelector("#contact")
@@ -89,6 +88,7 @@ export default function HeroSection() {
               }
             >
               Contact Me
+              <Send size={18} />
             </button>
           </motion.div>
         </div>

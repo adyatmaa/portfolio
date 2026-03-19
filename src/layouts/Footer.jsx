@@ -34,7 +34,7 @@ export default function Footer() {
           </a>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="ml-4 p-2 rounded-lg border hover:scale-105 transition-all"
+            className="ml-4 p-2 rounded-lg border hover:scale-105 cursor-pointer transition-all"
             aria-label="Back to top"
           >
             <ArrowUp size={16} />

@@ -31,14 +31,13 @@ export default function AboutSection() {
           </h2>
           <div className="w-24 h-1 bg-teal-600/80 rounded-full mb-12"></div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-12 items-start text-gray-400">
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
-                Hello! I'm Alex, a fullstack developer based in San Francisco
-                with a passion for building digital products that make a
-                difference. My journey into development started in college when
-                I built a small tool to automate my class schedule — and I've
-                been hooked ever since.
+                Hello! I'm Adyatma, a junior developer with a passion for
+                building digital products that make a difference. My journey
+                into development started in college when I built a small tool to
+                automate my class schedule — and I've been hooked ever since.
               </p>
               <p>
                 Over the past few years, I've had the privilege of working at
@@ -61,14 +60,16 @@ export default function AboutSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: index * 0.15 }}
-                    className="flex gap-4 p-5 rounded-xl border transition-all duration-300"
+                    className="flex gap-4 p-5 rounded-xl border border-gray-700 hover:border-teal-500 transition-all duration-300"
                   >
-                    <div className="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center">
-                      <item.icon className="h-5 w-5" />
+                    <div className="shrink-0 w-10 h-10 rounded-lg bg-teal-500/20 flex items-center justify-center">
+                      <item.icon className="h-5 w-5 text-teal-500" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">{item.title}</h3>
-                      <h3 className="text-sm">{item.desc}</h3>
+                      <h3 className="font-semibold text-gray-300 mb-1">
+                        {item.title}
+                      </h3>
+                      <h3 className="text-sm text-gray-400">{item.desc}</h3>
                     </div>
                   </motion.div>
                 );

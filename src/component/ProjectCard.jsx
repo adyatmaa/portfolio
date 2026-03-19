@@ -9,7 +9,7 @@ export default function ProjectCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="rounded-xl space-y-4 bg-primary border border-gray-500 flex flex-col"
+      className="rounded-xl space-y-4 bg-primary border border-gray-500 hover:border-teal-500/70 flex flex-col transition-colors duration-300"
     >
       <img
         src={project.image}
