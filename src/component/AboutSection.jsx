@@ -1,18 +1,22 @@
 import { motion } from "framer-motion";
-import { Code2, Lightbulb, Users } from "lucide-react";
+import { BrainCircuit, Lightbulb, Users } from "lucide-react";
 
 export default function AboutSection() {
   const strengths = [
     {
-      icon: Code2,
-      title: "Clean Code",
-      desc: "I do write clean and manageable code",
+      icon: BrainCircuit,
+      title: "Eager Learner",
+      desc: "I like to explore new things and have a eagerness to keep learning.",
     },
-    { icon: Lightbulb, title: "Problem Solving", desc: "I do solve problems" },
+    {
+      icon: Lightbulb,
+      title: "Problem Solving",
+      desc: "I try to analyze the situation and find a suitable solution.",
+    },
     {
       icon: Users,
       title: "Collaborations",
-      desc: "I do collaborate with my teams",
+      desc: "I do collaborate and sharing each other experiences with my teams.",
     },
   ];
 
@@ -36,19 +40,19 @@ export default function AboutSection() {
               <p>
                 Hello! I'm Adyatma, a junior developer with a passion for
                 building digital products that make a difference. My journey
-                into development started in college when I built a small tool to
-                automate my class schedule — and I've been hooked ever since.
+                into development started in college when I write a simple script
+                that return the list of records i have in my database.
               </p>
               <p>
-                Over the past few years, I've had the privilege of working at
-                startups and agencies, building everything from e-commerce
-                platforms to internal dashboards. I focus on writing clean,
-                accessible code and creating intuitive user experiences.
+                Over the past few years, I've been learning how to make some
+                project fundamentally and how to apply it into the real world
+                problem.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring open-source
-                projects, writing technical blog posts, or experimenting with
-                new frameworks and tools.
+                While I'm not doing codes, you'll find me exploring and learning
+                something new that i found interesting. I try my best to become
+                someone who knows a lot of things, not only konws, but also kind
+                of understands those things.
               </p>
             </div>
             <div className="flex flex-col space-y-6">

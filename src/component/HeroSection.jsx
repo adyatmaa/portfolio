@@ -42,19 +42,19 @@ export default function HeroSection() {
             Adyatma Abidin.
           </motion.h1>
 
-          <motion.h2
+          {/* <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="text-muted mb-6 text-3xl sm:text-4xl md:text-6xl font-bold leading-tight"
           >
             I do code.
-          </motion.h2>
+          </motion.h2> */}
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.4 }}
             className="text-gray-400 mb-10 text-lg md:text-xl max-w-xl leading-relaxed"
           >
             Junior Full-Stack Developer who passionate about building efficient,
@@ -65,8 +65,8 @@ export default function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 20 }}
-            transition={{ delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+            transition={{ delay: 0.5 }}
+            className="flex flex-col sm:flex-row gap-4 items-center md:justify-start"
           >
             <button
               className="bg-teal-500 px-8 py-3 rounded-xl inline-flex items-center gap-4 text-gray-900 font-mono cursor-pointer hover:scale-105 duration-300"

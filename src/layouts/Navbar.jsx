@@ -96,7 +96,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden backdrop-blur-xl border-b"
+            className="md:hidden backdrop-blur-xl border-b border-gray-500"
           >
             <ul className="flex flex-col items-center gap-6 py-8">
               {navLink.map((link) =>

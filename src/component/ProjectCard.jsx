@@ -9,15 +9,14 @@ export default function ProjectCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="rounded-xl space-y-4 bg-primary border border-gray-500 hover:border-teal-500/70 flex flex-col transition-colors duration-300"
+      className="rounded-xl space-y-4 p-4 bg-primary border border-gray-500 hover:border-teal-500/70 flex flex-col transition-colors duration-300"
     >
       <img
         src={project.image}
-        alt=""
-        className="w-full object-cover rounded-t-xl"
-        // className="w-full h-48 object-cover rounded-t-xl"
+        alt={project.name}
+        className="w-full h-96 object-cover rounded-md border border-gray-500 hover:border-teal-500/70 duration-300"
       />
-      <div className="py-1 px-6 flex flex-col flex-1">
+      <div className="py-1 px-2 flex flex-col flex-1">
         <p className="mb-4 font-mono leading-tight text-teal-400">
           Featured Project
         </p>
@@ -29,7 +28,7 @@ export default function ProjectCard({ project, index }) {
             return (
               <span
                 key={i}
-                className="text-sm mb-4 text-gray-400 bg-gray-900 py-2 px-4 rounded-xl"
+                className="text-sm mb-4 text-gray-400 bg-gray-900 py-2 px-4 rounded-xl hover:scale-105 duration-300 cursor-default"
               >
                 {item}
               </span>

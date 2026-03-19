@@ -12,7 +12,7 @@ export const project = [
     ],
     stack: ["Flutter", "Hive Flutter"],
     role: "Fullstack Developer",
-    image: "/login.png"
+    image: "/Shot.png"
   },
   {
     id: "manajemen",
@@ -29,6 +29,6 @@ export const project = [
     ],
     stack: ["HTML", "Tailwind CSS", "JavaScript", "Laravel", "MySQL"],
     role: "Fullstack Developer",
-    image: "/login.png"
+    image: "/manajemen.png"
   }
 ]

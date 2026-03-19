@@ -32,7 +32,7 @@ export default function ProjectDetails() {
         >
           <Link
             to="/"
-            className="inline-flex text-teal-500 font-mono items-center gap-2 hover:gap-3 transition-all duration-300"
+            className="inline-flex mb-4 text-teal-500 font-mono items-center gap-2 hover:gap-3 transition-all duration-300"
           >
             <ArrowLeft size={14} />
             Back to projects
@@ -46,7 +46,7 @@ export default function ProjectDetails() {
               <img
                 src={record.image}
                 alt=""
-                className="w-full object-cover rounded-xl"
+                className="w-full h-52 md:h-124 object-cover rounded-xl"
               />
             </section>
 
