@@ -42,7 +42,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
         ${scrolled ? "bg-teal-900/5 backdrop-blur-xl" : "bg-transparent"}`}
     >
-      <div className="container mx-auto px-6 md:px-0 py-4 flex items-center justify-between ">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between ">
         <Link
           to="/"
           className="text-xl font-bold text-neutral-100 hover:text-teal-500 transition-colors "
