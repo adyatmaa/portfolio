@@ -20,15 +20,15 @@ export default function ProjectCard({ project, index }) {
         <p className="mb-4 font-mono leading-tight text-teal-400">
           Featured Project
         </p>
-        <p className="text-lg font-bold mb-4 leading-tight">{project.name}</p>
-        <p className="text-md mb-4 text-gray-400 flex-1">{project.desc}</p>
+        <p className="text-lg font-medium mb-4 leading-tight">{project.name}</p>
+        <p className="text-sm mb-4 text-gray-400 flex-1">{project.desc}</p>
 
         <div className="flex flex-wrap gap-x-4">
           {project.stack.map((item, i) => {
             return (
               <span
                 key={i}
-                className="text-sm mb-4 text-gray-400 bg-gray-900 py-2 px-4 rounded-xl hover:scale-105 duration-300 cursor-default"
+                className="text-sm mb-4 text-gray-400 bg-gray-900 py-1.5 px-3 rounded-lg hover:scale-105 duration-300 cursor-default"
               >
                 {item}
               </span>
@@ -36,9 +36,29 @@ export default function ProjectCard({ project, index }) {
           })}
         </div>
         <div className="w-full py-6 border-t border-gray-400 flex flex-row justify-between">
-          <div className="flex flex-row space-x-4 text-gray-400">
-            <Github size={18} className="hover:cursor-not-allowed" />
-            <ExternalLink size={18} className="hover:cursor-not-allowed" />
+          <div className="flex flex-row gap-4 text-gray-400">
+            {project.github ? (
+              <a
+                href={project.github}
+                target="_blank"
+                className="hover:text-teal-500 duration-100"
+              >
+                <Github size={18} className="" />
+              </a>
+            ) : (
+              <Github size={18} className="hover:cursor-not-allowed" />
+            )}
+            {project.exLink ? (
+              <a
+                href={project.exLink}
+                target="_blank"
+                className="hover:text-teal-500 duration-100"
+              >
+                <ExternalLink size={18} className="" />
+              </a>
+            ) : (
+              <ExternalLink size={18} className="hover:cursor-not-allowed" />
+            )}
           </div>
           <Link
             to={`projects/${project.id}`}
